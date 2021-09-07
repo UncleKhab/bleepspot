@@ -25,12 +25,9 @@ const IdeaPage = () => {
   const debounceHandler = useCallback(debounce(loadIdeas, 20), []);
   return (
     <div onScroll={debounceHandler} className="idea_card" ref={cardRef}>
-      <Idea title="app for something" />
-      <Idea title="app for something" />
-      <Idea title="app for something" />
-      <Idea title="app for something" />
-      <Idea title="app for something" />
-      <Idea title="app for something" />
+      <Idea item={{ title: "Idea Generator for Apps" }} />
+      <Idea item={{ title: "Pinterest for Athletes" }} />
+      <Idea item={{ title: "Marketing App for Dentists" }} />
     </div>
   );
 };
