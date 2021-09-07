@@ -1,0 +1,16 @@
+.idea_card {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+.idea_card::-webkit-scrollbar {
+  display: none;
+}
+.idea_card {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
